@@ -1,30 +1,39 @@
 <! DOCTYPE html>
   <html lang="en" dir="ltr">
   <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
       <title> Dylan Nguyen's E-profile </title>
 
       <style>
+      * {box-sizing: border-box;}
+
         body {
           font-size: 13pt;
           font-family: sans-auto;
           width: auto;
           text-align: center;
-          border-left: 150px solid #ddd;
+          border-left: 150px solid #dddddd;
           border-right: 150px solid #dddddd;
+          border-top: 44px solid #dddddd;
         }
 
       .menu {
         overflow: hidden;
         background-color: #3e3e3e;
+        position: fixed;
+        top: 1;
+        width: 79.2%;
       }
 
       .menu a {
         float: left;
+        display: block;
         color: #f5f5f5;
         text-align: center;
         padding: 15px 17px;
         font-size: 19px;
+        text-decoration: none;
       }
 
       .menu a:hover{
@@ -35,6 +44,51 @@
       .menu a.active {
         background-color: #ec8a1c;
         color: white;
+      }
+
+      .menu .search-container {
+        float: right;
+      }
+
+      .menu input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        border: none;
+        font-size: 17px;
+      }
+
+      .menu .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .menu .search-container button:hover {
+        background: #ccc;
+      }
+
+      @media screen and (max-width: 700px) {
+        .menu .search-container {
+          float: none;
+        }
+
+        .menu a, .menu input[type=text], .menu .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+
+        .menu input[type=text] {
+          border: 1px solid #ccc;
+        }
       }
 
 .link_header{
@@ -64,6 +118,12 @@
       <a href="#ideal_job">Ideal Job</a>
       <a href="#personal_profile">Personal Profile</a>
       <a href="#project_idea">Project Idea</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search..." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
     </div>
 
 
@@ -74,7 +134,7 @@
         <table style="font-size: 15pt;">
             <tr>
               <td> Full Name: </td>
-              <td style="padding-left:10pt;"> Phong Phu Nguyen </td>
+              <td style="padding-left:10pt;"> Phong Phu Nguyen (Dylan Nguyen) </td>
             </tr>
             <tr>
               <td>Date of Birth: </td>
@@ -86,13 +146,14 @@
             </tr>
             <tr>
               <td> Student email: </td>
-              <td style="padding-left:10pt;"> <a class="link_para" href="mailto:S3946152@student.rmit.edu.au"> S3946152@student.rmit.edu.au </a></td>
+              <td title="Dylan's email" style="padding-left:10pt;"> <a class="link_para" href="mailto:S3946152@student.rmit.edu.au"> S3946152@student.rmit.edu.au </a></td>
             </tr>
         </table>
 
         <img src= " IMG_0123.jpg" alt="Picture of myself" style="width:624px; height:416;">
 
-        <p> My full name is Phong Phu Nguyen, but I prefer to go by Dylan Nguyen. My family was originally from Vietnam but fled because of the Vietnam War. Wanting a better life, both my grandparents fled Vietnam when my parents were young, too young to even remember. I personally speck two language English is my main language and Vietnamese is my second language despite speaking Vietnamese first because of my grandparents, mostly being my caretaker while my parents were working. I started my primary experience in the year 2009 at <a title="Link to Bethany Catholic Primary School website" class="link_para" href="https://www.bswerribeenth.catholic.edu.au/">Bethany Catholic Primary School</a> finished in 2015 and attended high school from 2016 to 2021 at <a title="Link to Thomas Carr College website" class="link_para" href="https://www.thomascarr.vic.edu.au/">Thomas Carr College</a>. An interesting fact about myself is that I can do a stomach wave where I'm able to roll my abdomen, not many people know that talent because well not, but people would want to see my bare stomach. </p>
+        <p> My full name is Phong Phu Nguyen, but I prefer to go by Dylan Nguyen. My family was originally from Vietnam but fled because of the Vietnam War. Wanting a better life, both my grandparents fled Vietnam when my parents were young, too young to even remember. I personally speck two language English is my main language and Vietnamese is my second language despite speaking Vietnamese first because of my grandparents, mostly being my caretaker while my parents were working. I started my primary experience in the year 2009 at <a title="Go to Bethany Catholic Primary School website" class="link_para" href="https://www.bswerribeenth.catholic.edu.au/">Bethany Catholic Primary School</a> finished in 2015 and attended high school from 2016 to 2021 at <a title="Go to Thomas Carr College website" class="link_para" href="https://www.thomascarr.vic.edu.au/">Thomas Carr College</a>. An interesting fact about myself is that I can do a stomach wave where I'm able to roll my abdomen, not many people know that talent because well not, but people would want to see my bare stomach. </p>
+
 
       <h2><a class="link_header" name="interest_IT" href="#home" title="Back to top"> Interest in IT </a></h2>
 
@@ -105,7 +166,7 @@
 
     <h2><a class="link_header" name="ideal_job" href="#home" title="Back to top"> Ideal Job </a></h2>
 
-      <p> An ideal job for me would be someone like <a class="link_para" href="https://www.youtube.com/c/MichaelReeves"> Michael Reeves </a> or <a class="link_para" href="https://www.youtube.com/c/Gloudas"> Dougdoug (Douglas Wreden) </a> where they are YouTube/content creator who are able to use their programming skills for entertainment. This job is appealing to me because it has so much freedom with it, from working on any project you want to being able to work from home or aboard, you are able to do a lot were as normal job you are forced to work a nine to five job which would be hard for me since I would get bored easily. </p>
+      <p> An ideal job for me would be someone like <a title="Go to Michael Reeves's Youtube channel" class="link_para" href="https://www.youtube.com/c/MichaelReeves"> Michael Reeves </a> or <a title="Go to Dougdoug's Youtube channel" class="link_para" href="https://www.youtube.com/c/Gloudas"> Dougdoug (Douglas Wreden) </a> where they are YouTube/content creator who are able to use their programming skills for entertainment. This job is appealing to me because it has so much freedom with it, from working on any project you want to being able to work from home or aboard, you are able to do a lot were as normal job you are forced to work a nine to five job which would be hard for me since I would get bored easily. </p>
 
       <p> The skills required wouldn't but too many, but some most notable skills would be communication, patience and problem solving. There isn't much experience required for the position but being able to get along with others is key to grow and improve. </p>
 
@@ -116,7 +177,7 @@
     <h2><a class="link_header" name="personal_profile" href="#home"  title="Back to top"> Personal profile </a></h2>
 
 
-        <p> My results from the <a class="link_para" href="https://www.16personalities.com/free-personality-test"> Myers-Briggs </a> personality test are that I'm a 'Defender'. I have an introverted percentage of 66%, Observant percentage of 63%, Feeling percentage of 67%, Judging percentage of 56% and lastly Turbulent with a percentage of 58%. The result of a learning style test I did online from <a class="link_para" href="https://www.how-to-study.com/learning-style-assessment/">How to study</a> shows that I'm a 'visual' learner where I prefer learning in person and see graphs, task etc... First before knowing what to do. <a class="link_para" href="https://my-personality-test.com/big-5?gclid=CjwKCAjw_tWRBhAwEiwALxFPoZE5YKAPZ5QvNElhjZRF58wv_Krcs6jghN7T3jPso9jLgCXAFy40ehoCu5cQAvD_BwE"> The big five </a> personality test states that my 'extraversion' is medium which means that at times I enjoy being around others but at the same time I also enjoy being alone. 'Agreeableness' is medium, and it states others would describe me as friendly, helpful and would typically try and avoid conflict. 'Conscientiousness' is medium I'm able to have a balance between work and fun, I'm very reliable and hardworking along with my friendly and relaxing personality, makes the environment fun. 'Neuroticism' is medium, its states that I'm a realist and will try to do my best at everything even if there doesn't seem to be anything in it for me. My 'openness to experience' is low and states that I'm very dedicated to any work and always make sure to see the tasks through to the end. </p>
+        <p> My results from the <a title="Go to Myers Briggs personality test website" class="link_para" href="https://www.16personalities.com/free-personality-test"> Myers-Briggs </a> personality test are that I'm a 'Defender'. I have an introverted percentage of 66%, Observant percentage of 63%, Feeling percentage of 67%, Judging percentage of 56% and lastly Turbulent with a percentage of 58%. The result of a learning style test I did online from <a title="Go to How to study website" class="link_para" href="https://www.how-to-study.com/learning-style-assessment/">How to study</a> shows that I'm a 'visual' learner where I prefer learning in person and see graphs, task etc... First before knowing what to do. <a title="Go to The big five website" class="link_para" href="https://my-personality-test.com/big-5?gclid=CjwKCAjw_tWRBhAwEiwALxFPoZE5YKAPZ5QvNElhjZRF58wv_Krcs6jghN7T3jPso9jLgCXAFy40ehoCu5cQAvD_BwE"> The big five </a> personality test states that my 'extraversion' is medium which means that at times I enjoy being around others but at the same time I also enjoy being alone. 'Agreeableness' is medium, and it states others would describe me as friendly, helpful and would typically try and avoid conflict. 'Conscientiousness' is medium I'm able to have a balance between work and fun, I'm very reliable and hardworking along with my friendly and relaxing personality, makes the environment fun. 'Neuroticism' is medium, its states that I'm a realist and will try to do my best at everything even if there doesn't seem to be anything in it for me. My 'openness to experience' is low and states that I'm very dedicated to any work and always make sure to see the tasks through to the end. </p>
 
         <p> The result of the three test I've completed seems precise on the type of person I am, my thoughts and believes. From working hard, avoiding conflict to putting in my all is what I strive to be and hopefully am. With the results received by the test I work best when I'm with people I know and trust otherwise I wouldn't communicate as much since part of me is still an introvert. So, by being an introvert this would making working in a team hard as it would mean I'm limiting myself to working with friends. Yet working with me wouldn't be too hard as I'm an open person and is willing to hear the other person out on their thoughts and ideas. If I were to work with friends, I would be able to work in a relaxing environment which I could work at my optimal level and achieve a lot. </p>
 
