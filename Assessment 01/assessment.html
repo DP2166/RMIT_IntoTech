@@ -1,137 +1,99 @@
 <! DOCTYPE html>
   <html lang="en" dir="ltr">
   <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta charset="utf-8">
-      <title> Dylan Nguyen's E-profile </title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <title> Dylan Nguyen's E-profile </title>
 
       <style>
       * {box-sizing: border-box;}
 
         body {
           font-size: 13pt;
-          font-family: sans-auto;
-          width: auto;
+          /*font-family: sans-auto;*/
+          font-family: 'Mukta', sans-serif;
+          /*width: auto;*/
           text-align: center;
-          border-left: 150px solid #dddddd;
-          border-right: 150px solid #dddddd;
-          border-top: 44px solid #dddddd;
+          /*border-left: 150px solid #dddddd;
+          border-right: 150px solid #dddddd;*/
         }
 
-      .menu {
-        overflow: hidden;
-        background-color: #3e3e3e;
-        position: fixed;
-        top: 1;
-        width: 79.2%;
-      }
-
-      .menu a {
-        float: left;
-        display: block;
-        color: #f5f5f5;
-        text-align: center;
-        padding: 15px 17px;
-        font-size: 19px;
-        text-decoration: none;
-      }
-
-      .menu a:hover{
-        background-color: #f5f5f5;
-        color: black;
-      }
-
-      .menu a.active {
-        background-color: #ec8a1c;
-        color: white;
-      }
-
-      .menu .search-container {
-        float: right;
-      }
-
-      .menu input[type=text] {
-        padding: 6px;
-        margin-top: 8px;
-        border: none;
-        font-size: 17px;
-      }
-
-      .menu .search-container button {
-        float: right;
-        padding: 6px 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #ddd;
-        font-size: 17px;
-        border: none;
-        cursor: pointer;
-      }
-
-      .menu .search-container button:hover {
-        background: #ccc;
-      }
-
-      @media screen and (max-width: 700px) {
-        .menu .search-container {
-          float: none;
+        .centered-wrapper {
+          max-width: 1000px;
+          margin: auto;
         }
 
-        .menu a, .menu input[type=text], .menu .search-container button {
-          float: none;
+
+
+        .menu {
+          overflow: hidden;
+          background-color: #3e3e3e;
+          position: fixed;
+          top: 1;
+          width: 50%;
+          height: 45px;
+        }
+
+        .menu a {
+          float: left;
           display: block;
-          text-align: left;
-          width: 100%;
-          margin: 0;
-          padding: 14px;
+          color: #f5f5f5;
+          text-align: center;
+          padding: 15px 17px;
+          font-size: 18px;
+          text-decoration: none;
         }
 
-        .menu input[type=text] {
-          border: 1px solid #ccc;
+        .menu a:hover{
+          background-color: #f5f5f5;
+          color: black;
         }
-      }
 
-.link_header{
-  color: black;
-}
+        .menu a.active {
+          background-color: #ec8a1c;
+          color: white;
+        }
+
+        .link_header{
+          color: black;
+        }
+
         img {
           border: 10px solid #ec8a1c;
         }
 
         p {
           text-align: left;
-          padding: 0 15pt 0 15pt;
+          padding: 0 20pt 0 20pt;
         }
 
-.link_para{
-  color: #0000EE;
-}
+        .link_para{
+          color: #0000EE;
+        }
 
       </style>
   </head>
   <body>
-    <a Name="home"></a>
-    <div class="menu">
-      <a class="active" href="#home"> Home </a>
-      <a href="#personal_info">Personal Information</a>
-      <a href="#interest_IT">Interest in IT</a>
-      <a href="#ideal_job">Ideal Job</a>
-      <a href="#personal_profile">Personal Profile</a>
-      <a href="#project_idea">Project Idea</a>
-      <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search..." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <div class="centered-wrapper">
+      <a Name="home"></a>
+      <div class="menu">
+        <a class="active" href="#home"> Home </a>
+        <a href="#personal_info">Personal Information</a>
+        <a href="#interest_IT">Interest in IT</a>
+        <a href="#ideal_job">Ideal Job</a>
+        <a href="#personal_profile">Personal Profile</a>
+        <a href="#project_idea">Project Idea</a>
       </div>
     </div>
 
-
+    <div style="padding-top:25px;"  class="centered-wrapper">
 
       <h1> E-profile </h1>
 
         <h2><a class="link_header" name="personal_info" href="#home" title="Back to top"> Personal information </a></h2>
-        <table style="font-size: 15pt;">
+        <table style="font-size: 15pt; padding-left">
             <tr>
               <td> Full Name: </td>
               <td style="padding-left:10pt;"> Phong Phu Nguyen (Dylan Nguyen) </td>
@@ -149,6 +111,7 @@
               <td title="Dylan's email" style="padding-left:10pt;"> <a class="link_para" href="mailto:S3946152@student.rmit.edu.au"> S3946152@student.rmit.edu.au </a></td>
             </tr>
         </table>
+        <br/>
 
         <img src= " IMG_0123.jpg" alt="Picture of myself" style="width:624px; height:416;">
 
@@ -213,5 +176,6 @@
 
         <p> If the project were to be successful, then the outcome would be proven beneficial for everyone. The amount of screen time had drastically jumped during the pandemic and people may have gotten used to they're new habits such as gaming, bingeing shows or even browsing the web. With the app in place, it would help people realise the amount of time they spend on their screens in total. As well as have more people spending more time out an about outdoors, the government is still having trouble with the population going outdoors and spending money to increase the economy back to where it formally was before the pandemic. </p>
 
+      </div>
     </body>
-    </html>
+</html>

@@ -1,0 +1,54 @@
+* {box-sizing: border-box;}
+
+  body {
+    font-size: 15pt;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+  }
+
+  .centered-wrapper {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .menu {
+    overflow: hidden;
+    background-color: #3e3e3e;
+    position: fixed;
+    top: 1;
+    width: 52%
+  }
+
+  .menu a {
+    float: left;
+    display: block;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .menu a:hover{
+    background-color: #f5f5f5;
+    color: black;
+  }
+
+  .menu a.active {
+    background-color: #ec8a1c;
+    color: white;
+  }
+
+  img {
+    border: 10px solid #ec8a1c;
+  }
+
+  p {
+    text-align: left;
+    padding: 0 25pt 0 25pt;
+  }
+
+  .link_para {
+    color: #0000EE;
+    text-decoration: none;
+  }
