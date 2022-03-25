@@ -52,3 +52,20 @@
     color: #0000EE;
     text-decoration: none;
   }
+
+  .table_holiday{
+    font-size: 12pt;
+  }
+
+  .table_holiday td{
+        vertical-align: top;
+        padding: 5px;
+  }
+
+  .table_holiday img{
+        width: 200px; height: 370px;
+  }
+
+  .table_project td{
+        vertical-align: top;
+        padding: 5px;
